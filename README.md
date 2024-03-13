@@ -80,3 +80,20 @@ You have multiple places in your codebase that need access to the database, requ
 Correct Answer:
 d. Put them in a .env file, load data from it into a configuration system, then request the credentials from a database service provider.
 
+# Challenge 9: Scenario Analysis
+Question: Given a distributed system that experiences latencies and occasional
+failures in one of its microservices, how would you optimize it?
+Describe your approach to identifying the problem, possible solutions, and how
+you would ensure high availability and resilience
+
+## Indentify Problem:
+First we need to implement a monitoring and alerting system in order to track performance metrics, latency, error rates, and service availability. this help us to indentify problems way more faster.
+This also include implement Logging and tracking strategies inside our code.
+## Posible solutions:
+1. Optimizate code and queries in order to improve overall performance and reduce latencies.
+2. In case first point isnt enough.  Implement horizontal scaling by adding more instances of the microservice to distribute the load evenly and handle increased traffic. Utilize load balancers to distribute incoming requests across multiple instances.
+3. Implement catching system and asynchronous Processing for certain tasks.
+## Ensure high availability and resilience:
+Implement a distributed Architecture that minimizes single points of failure, implement containerization and orchestration tools like docker to ensure scability.
+Implement automated deployment and rollback.
+Implement recovery mechanisms and regular backup to protect data.
