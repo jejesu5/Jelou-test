@@ -6,6 +6,8 @@ JWT_SECRET="thisisasecret"
 
 run docker-compose up
 
+Go to localhost:8080/api/docs for test the API (Get a JWT token to access routes)
+
 ### Given an array of integers, keep a total score based on the following:
 1. Add 1 point for every even number in the array
 
