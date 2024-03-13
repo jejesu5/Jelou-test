@@ -6,6 +6,32 @@ JWT_SECRET="thisisasecret"
 
 run docker-compose up
 
+### Given an array of integers, keep a total score based on the following:
+1. Add 1 point for every even number in the array
+
+2. Add 3 points for every odd number in the array, except for the number "5"
+
+3. Add 5 points every time the number "5" appears in the array
+
+Note that 0 is considered even.
+
+
+```javascript
+function calculateScore(arr) {
+    let score = 0;
+    for (let num of arr) {
+        if (num === 5) {
+            score += 5;
+        } else if (num % 2 === 0) {
+            score += 1;
+        } else {
+            score += 3;
+        }
+    }
+    return score;
+}
+```
+
 # Challenge 1: Cryptocurrency Trading Platform
 In this challenge, you're building a high-throughput API for a cryptocurrency trading platform. Time is crucial due to the high volume of trade orders. You need to choose the fastest verb for read-only operations.
 
